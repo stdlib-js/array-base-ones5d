@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2023 The Stdlib Authors.
@@ -16,30 +16,25 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-var filled5d = require( '@stdlib/array-base-filled5d' );
-
-
-// MAIN //
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Returns a five-dimensional nested array filled with ones.
 *
-* @param {NonNegativeIntegerArray} shape - array shape
-* @returns {Array} filled array
+* @param shape - array shape
+* @returns output array
 *
 * @example
 * var out = ones5d( [ 1, 1, 1, 1, 3 ] );
 * // returns [ [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ] ]
 */
-function ones5d( shape ) {
-	return filled5d( 1.0, shape );
-}
+declare function ones5d( shape: Collection<number> ): Array<Array<Array<Array<Array<number>>>>>;
 
 
 // EXPORTS //
 
-module.exports = ones5d;
+export = ones5d;
