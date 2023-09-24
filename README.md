@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import ones5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-ones5d@deno/mod.js';
+import ones5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-ones5d@v0.1.0-deno/mod.js';
 ```
 
 #### ones5d( shape )
@@ -85,7 +85,7 @@ var out = ones5d( [ 1, 1, 1, 2, 3 ] );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import ones5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-ones5d@deno/mod.js';
+import ones5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-ones5d@v0.1.0-deno/mod.js';
 
 var out = ones5d( [ 1, 1, 1, 1, 3 ] );
 // returns [ [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ] ]
